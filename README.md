@@ -24,7 +24,7 @@
 
 ## Description
 
-Warlock is an API that allows you to connect with a web3 signature and create a user linked to your wallet address.
+Analytics is an API that allows you to connect with a web3 signature and get analytics of blockchain interaction by user and contract.
 
 ## Installation
 
