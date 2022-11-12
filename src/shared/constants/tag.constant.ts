@@ -1,0 +1,5 @@
+export const MAX_TAG_COUNT = 10;
+
+export enum ENUM_TAG_STATUS_CODE_ERROR {
+    TAG_NOT_FOUND_ERROR = '9a705384-c01d-4141-a39b-5026caa709a5'
+}

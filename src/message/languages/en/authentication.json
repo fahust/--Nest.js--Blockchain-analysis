@@ -1,0 +1,44 @@
+{
+    "adminApiKey": {
+        "error": {
+            "notFound": "Admin API Key not found",
+            "invalid": "Invalid Admin API Key",
+            "unauthorized": "Unauthorized Admin API Key"
+        }
+    },
+    "apiKey": {
+        "error": {
+            "keyNeeded": "Need API Key",
+            "prefixInvalid": "Prefix API Key invalid",
+            "schemaInvalid": "API Key Schema invalid",
+            "timestampNotMatchWithRequest": "Timestamp not match with request",
+            "notFound": "Auth API not found",
+            "inactive": "Auth API Inactive",
+            "invalid": "Invalid API Key"
+        }
+    },
+    "web3": {
+        "challenge": {
+            "message": "Welcome to warlock!\nClick to sign in and accept the warlock Terms of Service: https://warlock.io/terms-of-service\nThis request will not trigger a blockchain transaction or cost any gas fees.\nYour authentication status will reset after 24 hours.\nWallet address:\n{walletAddress}\nNonce:\n{nonce}"
+        },
+        "error": {
+            "userNotFound": "User not found",
+            "invalidWeb3Signature": "Invalid web3 signature",
+            "refreshTokenNotFoundInCache": "Refresh token not found in cache",
+            "invalidRefreshTokenHash": "Invalid refresh token hash"
+        }
+    },
+    "permission": {
+        "error": {
+            "userNotFound": "User not found",
+            "forbidden": "User does not have the required permission: {requiredPermission}. The user's current permissions are: {userPermissions}"
+        }
+    },
+    "email": {
+        "error": {
+            "userNotFound": "User not found",
+            "emailNotMatching": "The email address entered does not match the user's email address in the database",
+            "hasConfirmedEmail": "The user's email address has already been validated"
+        }
+    }
+}

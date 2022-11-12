@@ -1,0 +1,13 @@
+{
+    "bulkUpdate": {
+        "error": {
+            "propertyNotFound": "Property {propertyId} not found"
+        }
+    },
+    "bulkDelete": {
+        "error": {
+            "propertyNotFound": "Property {propertyId} not found",
+            "propertyLocked": "Property {propertyId} is locked"
+        }
+    }
+}

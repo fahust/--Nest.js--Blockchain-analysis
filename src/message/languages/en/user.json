@@ -1,0 +1,17 @@
+{
+    "update": {
+        "error": {
+            "userNotFound": "User not found"
+        }
+    },
+    "addPermission": {
+        "error": {
+            "userNotFound": "User not found"
+        }
+    },
+    "deleteTag": {
+        "error": {
+            "userNotFound": "User not found"
+        }
+    }
+}

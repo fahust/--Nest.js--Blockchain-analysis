@@ -1,0 +1,12 @@
+{
+    "update": {
+        "error": {
+            "tagNotFound": "Tag not found"
+        }
+    },
+    "delete": {
+        "error": {
+            "tagNotFound": "Tag not found"
+        }
+    }
+}
