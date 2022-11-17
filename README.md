@@ -1,30 +1,18 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
-
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+<p align="center" width="100%"><img align="center" src="./doc/Analysis.png?raw=true" /></p>
 
 ## Description
 
 Analytics is an API that allows you to connect with a web3 signature and get analytics of blockchain interaction by user and contract.
+
+## Framework and language
+
+-   [Node.js](https://nodejs.org/dist/latest-v18.x/docs/api/) v18.12.1
+-   [Typescript](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html) v4.9.3
+-   [Nest](https://expressjs.com/en/starter/installing.html) v4.18.1
+-   [Mongoose](https://mongoosejs.com/docs/guide.html) v6.5.0
+-   [Jest](https://docs.nestjs.com/) v28.1.1
+-   [multer]() v1.4.5-lts.1
+-   [swagger]() v6.2.1
 
 ## Installation
 
@@ -36,24 +24,56 @@ $ yarn
 
 ```bash
 # development
-$ yarn run start
+$ yarn start
 
 # watch mode
-$ yarn run start:dev
+$ yarn start:dev
 
 # production mode
-$ yarn run start:prod
+$ yarn start:prod
+
+# prebuild project
+$ yarn prebuild
+
+# build project
+$ yarn build
+
+# debug mode
+$ yarn start:debug
+
+# auto lint code
+$ yarn lint
+
+# auto format code
+$ yarn format
 ```
 
 ## Test
 
 ```bash
 # unit tests
-$ yarn run test
+$ yarn test
 
 # e2e tests
-$ yarn run test:e2e
+$ yarn test:e2e
 
 # test coverage
-$ yarn run test:cov
+$ yarn test:cov
 ```
+
+## Documentation
+
+The **documentation** is generated using [swagger](https://swagger.io/docs/specification/basic-structure/) on this project
+![Documentation](./doc/Swagger.png?raw=true 'Documentation')
+
+## Authentication
+
+The **authentication** worked by web3 signature and registration by mail with [SendGrid](https://docs.sendgrid.com/for-developers/sending-email/quickstart-nodejs)
+
+## Storage
+
+The **storage** system use [AWS S3](https://docs.aws.amazon.com/s3/index.html) on a bucket with the use of [AWS SDK](https://www.npmjs.com/package/aws-sdk)
+
+## Test
+
+The **test** system use [jest]()
